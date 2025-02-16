@@ -46,8 +46,7 @@ function draw() {
   shaderProgram.setUniform("sTexture", img);
   shaderProgram.setUniform("uFogColor", fogColor);
   shaderProgram.setUniform("uFogDensity", fogNear);
-  // shaderProgram.setUniform("u_fogFar", fogFar);
-  shaderProgram.setUniform("fillCol", [0.2,0.2,0.5]);
+  shaderProgram.setUniform("u_fogFar", fogFar);
 
   angleX += radians(0.4);
   angleY += radians(0.7);
